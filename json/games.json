@@ -6,6 +6,7 @@
 		"description": "A winter-themed Tower Defense",
 		"genre": "Strategy",
 		"status": "In Progress",
-		"github": "http://armen138.github.com"
+		"image": "http://dev138.info/winterdefense/images/thumb.png",
+		"github": "https://github.com/Armen138/winterdefense"
 	}
 }

@@ -73,6 +73,14 @@ var Month = function(element) {
 		}
 	});
 
+	Object.defineProperty(month, "image", {
+		get: function() {
+			return $(element).find(".image").attr("src");
+		},
+		set: function(name) {
+			$(element).find(".image").attr("src", name);
+		}
+	});
 	return month;
 };
 
@@ -84,7 +92,7 @@ var Months = function(m) {
 	$(".month").each(function(idx) {
 		$(this).attr("month", m[idx]);
 		var html = "<h2>" + m[idx] + "</h2>" +
-					"<img src='img/placeholder.png' class='gamethumb' />" +
+					"<img src='img/placeholder.png' class='image' />" +
 					"<b>name:</b><span class='name prop'></span><br/>" +
 					"<b>tech:</b><span class='tech prop'></span><br/>" +
 					"<b>genre:</b><span class='genre prop'></span><br/>" +
